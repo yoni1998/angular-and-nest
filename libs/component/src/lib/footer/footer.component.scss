@@ -1,0 +1,38 @@
+footer {
+    background-color: #222;
+    padding: 1em 0;
+  
+    .container {
+      width: 90%;
+      margin: 0 auto;
+      text-align: center;
+  
+      .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+  
+        .col-md-4 {
+          width: 100%;
+          padding: 1em;
+          color: #fff;
+  
+          h3 {
+            font-weight: bold;
+          }
+  
+          ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            font-size: 0.9em;
+  
+            li {
+              margin: 0.5em 0
+            }
+          }
+        }
+      }
+    }
+  }
