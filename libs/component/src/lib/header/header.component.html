@@ -1,16 +1,37 @@
 <!-- HTML -->
 <header>
-    <div class="header-container">
-      <h1 class="header-title">Welcome!</h1>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
+  <nav>
+    <div class="sidebar">
+      <div class="sidebar-content">
+        <ul class="lists">
+          <li class="list"  *ngFor="let basisgegeven of basisgegevens">
+            <a href="#" class="nav-link"  >
+              <i class="bx bx-home-alt icon"></i>
+              <span class="link">{{ basisgegeven.navTitle}}</span>
+              <i class='bx bx-trash'  (click)="removeBasisgegeven(basisgegeven.id)"></i>
+            </a>
+        
+          </li>
+          
         </ul>
-      </nav>
+        <div class="bottom-cotent">
+          <ul>
+          <li class="list">
+            <a href="#" class="nav-link">
+              <i class="bx bx-cog icon"></i>
+              <span class="link">{{ settings }}</span>
+            </a>
+          </li>
+        </ul>
+        </div>
+      </div>
+      <div class="addTitleBtn">
+        <button (click)="buttonClicked()" *ngIf="!showInput"  type="button" [routerLink]="['/new']"  routerLinkActive="router-link-active"  mat-fab extended>
+          Add New Topic
+        </button>
+        <input *ngIf="showInput" #navTitle (keyup.enter)="addNewBasisgegeven(navTitle.value)" type="text" class="sideNavInput" placeholder="Enter new topics"/>
+
+      </div>
     </div>
+  </nav>
   </header>
-  
- 

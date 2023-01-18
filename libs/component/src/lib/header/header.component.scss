@@ -1,56 +1,61 @@
 
-.header-container {
-    width: 100%;
-    text-align: center;
-    background-color: #2196f3;
-    padding: 10px;
-  
-    @media (min-width: 768px) {
-      padding: 20px;
-    }
-  
-    @media (min-width: 992px) {
-      padding: 30px;
-    }
-  
-    h1 {
-      font-size: 1.2rem;
-      font-weight: bold;
-      color: #ffffff;
-  
-      @media (min-width: 768px) {
-        font-size: 1.4rem;
-      }
-  
-      @media (min-width: 992px) {
-        font-size: 1.6rem;
-      }
-    }
-  }
-  
-  nav {
-    width: 100%;
-    font-size: 1.3rem;
-    text-align: center;
-    padding: 10px 0;
-    ul {
-      margin: 0;
-      padding: 0;
-      li {
-        display: inline-block;
-        list-style-type: none;
-        a {
-          color: #fff;
-          padding: 0 15px;
-          text-decoration: none;
-        }
-      }
-    }
-  }
-  
-  //Media Query
-  @media (max-width: 768px) {
-    nav ul li {
-      display: block;
-    }
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.sidebar .sidebar-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 16px;
+  width: 20%;
+  height: 100%;
+
+}
+.sidebar-content .list {
+  list-style: none;
+}
+.list .nav-link {
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+  padding: 14px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  width: 12rem;
+}
+.lists .nav-link:hover {
+  background-color: #4070f4;
+}
+.nav-link .icon {
+  margin-right: 14px;
+  font-size: 20px;
+  color: #707070;
+}
+.nav-link .link {
+  font-size: 16px;
+  color: #707070;
+  font-weight: 400;
+}
+.lists .nav-link:hover .icon,
+.lists .nav-link:hover .link {
+  color: #fff;
+}
+.addTitleBtn {
+  padding: 0.5rem;
+}
+.sideNavInput {
+  padding: 12px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 10rem;
+  box-sizing: border-box;
+}
+.bx-trash {
+  cursor: pointer;
+  margin-left: 2rem;
+}
+

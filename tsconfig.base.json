@@ -15,7 +15,11 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@angular-and-nest/api": ["libs/api/src/index.ts"],
       "@angular-and-nest/component": ["libs/component/src/index.ts"],
+      "@angular-and-nest/data-access-basisgegevens": [
+        "libs/data-access-basisgegevens/src/index.ts"
+      ],
       "@angular-and-nest/feature-startscreen": [
         "libs/feature-startscreen/src/index.ts"
       ],
